@@ -23,5 +23,19 @@ public class Rectangle extends Quadrilatere{
 	}
 
 	//méthodes
+	public boolean estDeMemeCouleurQue(Rectangle str){
+		boolean str1;
+		if(this.getCouleur() == str.getCouleur()){
+			str1 = true;
+		}else{
+			str1 = false;
+		}
+		return str1;
+	}
+	
+	public String description(){
+		String str2 = super.description()+" qui a une aire de "+this.getAire();
+		return str2;
+	}
 	
 }
